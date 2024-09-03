@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*PADRONIZACAO DAS CORES POR VARIAVEIS*/
+:root{
+    --azul: #0044AF;
+    --vermelho: #FF0122;
+    --amarelo: #FFAF00;
+}
+
+#vertical .container{
+    width: 550px;
+    height: 350px;
+    /*define no formato GRID*/
+    display: grid;
+    /*define o padrao de colunas - repetir(numCol,tam)*/
+    grid-template-columns: repeat(3,33%);
+    /*define o padrao de linhas - repetir(numLinha,tam)*/
+    grid-template-rows: repeat(1,350px);
+    /*define o escapamento entre colunas e linhas*/
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+}
+
+#vertical .container .item1{
+    background-color: var(--amarelo);
+}
+#vertical .container .item2{
+    background-color: var(--azul);
+}
+#vertical .container .item3{
+    background-color: var(--vermelho);
+}
+
+#horizontal .container{
+    width: 550px;
+    height: 350px;
+    display: grid;
+    grid-template-columns:repeat(1,100%);
+    grid-template-rows: repeat(3,350px);
+}
+
+#horizontal .container .item1{
+    background-color: var(--amarelo);
+}
+#horizontal .container .item1{
+    background-color: var(--azul);
+}
+#horizontal .container .item1{
+    background-color: var(--vermelho);
+}

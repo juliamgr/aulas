@@ -1,0 +1,50 @@
+#menu ul li{
+    list-style-type:none;
+    float: left;
+}
+
+
+#menu ul li a{
+    background-color:aquamarine;
+    padding: 10px;
+    text-decoration: none;
+    font-family: papyrus;
+    font-size: 20px;
+    color: black;
+
+}
+
+#menu ul li a:hover{
+    background-color: hotpink;
+    text-decoration:underline;
+}
+
+.bloco{
+    width: 50%;
+    height: 400px;
+    display: block;
+    float: left;
+    background-color: rgb(245, 169, 235);
+}
+
+.bloco img{
+    width: 45%;
+}
+
+.bloco p{
+    width: 40%;
+    margin-left: 2%;
+}
+
+.esq{
+    float: left;
+}
+
+.dir{
+    float: right;
+}
+
+.quebra{
+    clear: both;
+    margin-top: 30px;
+}
